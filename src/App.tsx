@@ -119,8 +119,8 @@ function App() {
         name="register"
         onFinish={onFinish}
         initialValues={{
-          residence: ["zhejiang", "hangzhou", "xihu"],
-          prefix: "86",
+          residence: ["chicago", "illinois", "fraggle drive"],
+          prefix: "1",
         }}
         scrollToFirstError
       >
