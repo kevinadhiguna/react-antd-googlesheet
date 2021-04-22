@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Typography, Form, Input,
   Cascader,
@@ -86,6 +86,21 @@ function App() {
       </Select>
     </Form.Item>
   );
+
+  const [autoCompleteResult, setAutoCompleteResult] = useState<string[]>([]);
+
+  const onWebsiteChange = (value: string) => {
+    if (!value) {
+      setAutoCompleteResult([]);
+    } else {
+      setAutoCompleteResult(['.com', '.org', '.net'].map(domain => `${value}${domain}`));
+    }
+  };
+
+  const websiteOptions = autoCompleteResult.map(website => ({
+    label: website,
+    value: website,
+  }));
 
   return (
     <>
