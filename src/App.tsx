@@ -12,6 +12,41 @@ import { Typography, Form, Input,
 const { Title } = Typography;
 const { Option } = Select;
 
+const residences = [
+  {
+    value: 'chicago',
+    label: 'Chicago',
+    children: [
+      {
+        value: 'illinois',
+        label: 'Illinois',
+        children: [
+          {
+            value: 'fraggle drive',
+            label: 'Fraggle Drive',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    value: 'arizona',
+    label: 'Arizona',
+    children: [
+      {
+        value: 'yuma',
+        label: 'Yuma',
+        children: [
+          {
+            value: 'martha street',
+            label: 'Martha Street',
+          },
+        ],
+      },
+    ],
+  },
+];
+
 function App() {
   return (
     <>
