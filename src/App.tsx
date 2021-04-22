@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import 'antd/dist/antd.css';
 import {
   Typography,
   Form,
@@ -110,7 +111,7 @@ function App() {
 
   return (
     <>
-      <Typography>
+      <Typography className="App">
         <Title level={2}>React Ant Design - GoogleSheet</Title>
       </Typography>
       <Form
