@@ -256,9 +256,6 @@ function App() {
                 <Input />
               </Form.Item>
             </Col>
-            <Col span={12}>
-              <Button>Get captcha</Button>
-            </Col>
           </Row>
         </Form.Item>
 
