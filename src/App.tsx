@@ -91,7 +91,7 @@ function App() {
 
 		axios
 			.post(
-				process.env.REACT_APP_SHEET_URL,
+				process.env.REACT_APP_SHEET_URL!,
 				values
 			)
 			.then((response) => {
