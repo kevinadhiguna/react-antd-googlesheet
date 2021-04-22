@@ -237,45 +237,6 @@ function App() {
           </AutoComplete>
         </Form.Item>
 
-        <Form.Item
-          label="Captcha"
-          extra="We must make sure that your are a human."
-        >
-          <Row gutter={8}>
-            <Col span={12}>
-              <Form.Item
-                name="captcha"
-                noStyle
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input the captcha you got!",
-                  },
-                ]}
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-          </Row>
-        </Form.Item>
-
-        <Form.Item
-          name="agreement"
-          valuePropName="checked"
-          rules={[
-            {
-              validator: (_, value) =>
-                value
-                  ? Promise.resolve()
-                  : Promise.reject(new Error("Should accept agreement")),
-            },
-          ]}
-          {...tailFormItemLayout}
-        >
-          <Checkbox>
-            I have read the <a href="">agreement</a>
-          </Checkbox>
-        </Form.Item>
         <Form.Item {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">
             Register
