@@ -10,6 +10,7 @@ import { Typography, Form, Input,
   AutoComplete } from 'antd';
 
 const { Title } = Typography;
+const { Option } = Select;
 
 function App() {
   return (
