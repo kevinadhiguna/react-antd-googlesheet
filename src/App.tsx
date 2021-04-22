@@ -72,6 +72,8 @@ const tailFormItemLayout = {
 };
 
 function App() {
+  const [form] = Form.useForm();
+   
   return (
     <>
       <Typography>
