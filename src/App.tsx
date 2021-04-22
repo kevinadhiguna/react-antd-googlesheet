@@ -13,6 +13,7 @@ import {
   Button,
   AutoComplete,
 } from "antd";
+import axios from 'axios';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -79,8 +80,23 @@ const tailFormItemLayout = {
 function App() {
   const [form] = Form.useForm();
 
-  const onFinish = (values: any) => {
-    console.info("Received values of form :", values);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [website, setWebsite] = useState("");
+
+  const onFinish = () => {
+    const values = { email, password, nickname, phoneNumber, website };
+
+		axios
+			.post(
+				'https://sheet.best/api/sheets/db4d84c5-447e-4fab-9646-b07c71aea5cb',
+				values
+			)
+			.then((response) => {
+				console.log(response);
+			});
   };
 
   const prefixSelector = (
@@ -139,7 +155,7 @@ function App() {
             },
           ]}
         >
-          <Input />
+          <Input onChange={e => setEmail(e.target.value)} />
         </Form.Item>
 
         <Form.Item
@@ -153,7 +169,7 @@ function App() {
           ]}
           hasFeedback
         >
-          <Input.Password />
+          <Input.Password onChange={e => setPassword(e.target.value)} />
         </Form.Item>
 
         <Form.Item
@@ -193,7 +209,7 @@ function App() {
             },
           ]}
         >
-          <Input />
+          <Input onChange={e => setNickname(e.target.value)} />
         </Form.Item>
 
         <Form.Item
@@ -220,7 +236,7 @@ function App() {
             },
           ]}
         >
-          <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
+          <Input addonBefore={prefixSelector} style={{ width: "100%" }} onChange={e => setPhoneNumber(e.target.value)} />
         </Form.Item>
 
         <Form.Item
@@ -233,7 +249,7 @@ function App() {
             onChange={onWebsiteChange}
             placeholder="website"
           >
-            <Input />
+            <Input onChange={e => setWebsite(e.target.value)} />
           </AutoComplete>
         </Form.Item>
 
