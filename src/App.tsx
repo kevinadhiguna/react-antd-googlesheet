@@ -73,7 +73,11 @@ const tailFormItemLayout = {
 
 function App() {
   const [form] = Form.useForm();
-   
+
+  const onFinish = (values: any) => {
+    console.info("Received values of form :", values);
+  }
+
   return (
     <>
       <Typography>
