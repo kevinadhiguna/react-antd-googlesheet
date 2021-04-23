@@ -1,6 +1,12 @@
 # React Ant Design Google SpreadSheet
 
-App :<br/>
+Mobile Device-friendly :<br/>
+<img src="https://i.ibb.co/VV3mKYg/Screen-Shot-2021-04-24-at-13-44-40-iphone12black-portrait.png" width="600px" height="1100px" />
+
+on Laptop :<br/>
+<img src="https://i.ibb.co/KNYW7zk/react-antd-googlesheet-macbookpro13-front.png" />
+
+Demo :<br/>
 <img src="https://i.imgur.com/OpRbExv.png" />
 
 Result :<br/>
