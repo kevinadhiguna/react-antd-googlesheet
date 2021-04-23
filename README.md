@@ -36,7 +36,7 @@ Just like this :<br/>
 
 7) Open terminal and change directory to the project directory.
 
-8)You can run:
+8) You can run:
 
 ### `yarn start`
 
