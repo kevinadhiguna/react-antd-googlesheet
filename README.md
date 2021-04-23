@@ -49,3 +49,5 @@ You will also see any lint errors in the console.
 9) Input values to columns.
 
 10) Submit it and see your input data is automatically inserted to your GoogleSheet 🎉
+
+[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/react-antd-googlesheet)](https://github.com/kevinadhiguna)
