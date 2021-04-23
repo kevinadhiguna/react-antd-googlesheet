@@ -127,8 +127,8 @@ function App() {
 
   return (
     <>
-      <Typography className="App">
-        <Title level={2}>React Ant Design - GoogleSheet</Title>
+      <Typography className="title-container">
+        <Title level={2} className="title">React Ant Design - GoogleSheet</Title>
       </Typography>
       <Form
         {...formItemLayout}
