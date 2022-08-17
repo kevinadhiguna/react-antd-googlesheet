@@ -50,4 +50,4 @@ You will also see any lint errors in the console.
 
 10) Submit it and see your input data is automatically inserted to your GoogleSheet 🎉
 
-[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/react-antd-googlesheet)](https://github.com/kevinadhiguna)
+![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=react-antd-googlesheet&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
